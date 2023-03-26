@@ -96,9 +96,7 @@ const TypeIdea = () => {
 
         </div>
 
-        <ul>
-          <li>{typeIdeas.activity}</li>
-        </ul>
+        <h3> {typeIdeas.activity}</h3>
 
       </div>
       <Footer />
