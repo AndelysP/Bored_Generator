@@ -34,12 +34,12 @@ const PriceIdea = () => {
 
         <Button type="primary" onClick={handleSubmitPrice}>Rechercher</Button>
 
-        {priceIdeas && (
-          <div>
-            <h3>Activité: {priceIdeas.activity}</h3>
-            <p>Fourchette de prix : {priceIdeas.price} / 1</p>
-          </div>
-        )}
+
+        <>
+          <h3>Activité: {priceIdeas.activity}</h3>
+          <span>Fourchette de prix : {priceIdeas.price} / 1</span>
+        </>
+
       </div>
       <Footer />
     </>

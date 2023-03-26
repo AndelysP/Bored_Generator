@@ -1,5 +1,11 @@
+@font-face {
+    font-family: 'Vanilla';
+    src: url(../fonts/Vanilla.otf);
+}
+
+
 body {
-    background-color: rgb(167, 205, 236);
+    background-color: rgb(167, 205, 236);    
 }
 
 .nav {
@@ -99,7 +105,9 @@ body {
     }
 
     h1 {
-        color: rgb(20, 30, 49);
+        color: #263146;
+        font-family: 'Vanilla';
+        font-weight: 100;
     }
 
     .btn-list {
@@ -126,11 +134,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     position: absolute;
     bottom: 0;
     right: 0;
     left: 0;
+
+    p {
+        margin: 10px 0;
+    }
+
+    .git-icon {
+        fill: #fff;
+    }
 }
 
 .icon-wrapper {

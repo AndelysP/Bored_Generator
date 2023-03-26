@@ -32,12 +32,12 @@ const NumberIdea = () => {
         </div>
 
         <Button type="primary" onClick={handleSubmitNumber}>Rechercher</Button>
-        {numberIdeas && (
-          <div>
-            <h3>Activité: {numberIdeas.activity}</h3>
-            <p>Participants: {numberIdeas.participants} personnes</p>
-          </div>
-        )}
+
+        <>
+          <h3>Activité: {numberIdeas.activity}</h3>
+          <p>Participants: {numberIdeas.participants} personnes</p>
+        </>
+
       </div>
       <Footer />
     </>
