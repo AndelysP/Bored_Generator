@@ -10,7 +10,7 @@ const PriceIdea = () => {
   const [priceIdeas, setPriceIdeas] = useState([]);
 
   const getPriceIdeas = async () => {
-    await fetch(`http://www.boredapi.com/api/activity?price=${price}`)
+    await fetch(`https://www.boredapi.com/api/activity?price=${price}`)
       .then(res => res.json())
       .then(data => setPriceIdeas(data))
   }

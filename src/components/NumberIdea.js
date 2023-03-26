@@ -10,7 +10,7 @@ const NumberIdea = () => {
   const [numberIdeas, setNumbersIdeas] = useState([]);
 
   const numberParticipantIdea = async () => {
-    await fetch(`http://www.boredapi.com/api/activity?participants=${numbers}`)
+    await fetch(`https://www.boredapi.com/api/activity?participants=${numbers}`)
       .then(res => res.json())
       .then(data => setNumbersIdeas(data))
   }

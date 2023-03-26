@@ -9,7 +9,7 @@ function App() {
   const [ideas, setIdeas] = useState([]); // Idée aléatoire  
 
   const getIdeas = async () => {
-    await fetch("http://www.boredapi.com/api/activity/")
+    await fetch("https://www.boredapi.com/api/activity/")
       .then(res => res.json())
       .then(data => setIdeas(data))
   }

@@ -11,7 +11,7 @@ const TypeIdea = () => {
   const [typeIdeas, setTypeIdeas] = useState([]);
 
   const getTypeIdeas = async () => {
-    await fetch(`http://www.boredapi.com/api/activity?type=${type}`)
+    await fetch(`https://www.boredapi.com/api/activity?type=${type}`)
       .then(res => res.json())
       .then(data => setTypeIdeas(data))
   }
