@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+<h1 align="center" id="title">Bored Brain</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p id="description">Imaginez un générateur d'idées aléatoires qui vous donne des suggestions sur des activités à faire quand vous ne savez pas quoi faire de votre temps libre. Ce site est comme un ami qui vous donne un coup de pouce pour sortir de votre zone de confort et essayer quelque chose de nouveau. Et le meilleur dans tout ça c'est que le générateur d'idées est complètement aléatoire donc vous ne savez jamais ce que vous allez obtenir ! Une minute il peut vous proposer de faire du yoga et la minute suivante il peut vous suggérer de cuisiner un plat que vous n'avez jamais essayé auparavant. Alors si vous êtes coincé chez vous et que vous avez besoin d'inspiration ce site est fait pour vous ! Demo</p>
 
-## Available Scripts
+<h2>🚀 Demo</h2>
 
-In the project directory, you can run:
+[https://boredbrain.vercel.app/](https://boredbrain.vercel.app/)
 
-### `npm start`
+<h2>Project Screenshots:</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<img src="https://www.zupimages.net/up/23/12/ex9r.png" alt="project-screenshot" width="800" height="400/">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://www.zupimages.net/up/23/12/wn6f.png" alt="project-screenshot" width="200" height="350/">
 
-### `npm test`
+<h2>🛠️ Installation Steps:</h2>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<p>1. Installer les dépendances</p>
 
-### `npm run build`
+```
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p>2. Lancer le projet</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
+  
+<h2>💻 Built with</h2>
 
-### `npm run eject`
+Technologies utilisées dans le projet :
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+*   React
+*   Sass
