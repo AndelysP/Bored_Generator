@@ -26,7 +26,7 @@ const PriceIdea = () => {
       <Navbar />
       <div className="generator">
         <h1>Vous souhaitez trouver une activité selon le prix ?</h1>
-        <p>Sélectionnez une fourchette de prix comprise entre 0 et 1 pour générer une idée !</p>
+        <p className='price'>Sélectionnez une fourchette de prix comprise entre 0 et 1 pour générer une idée !</p>
 
         <div className="slider-container">
           <Slider min={0} max={1} step={0.1} onChange={setPrice} value={price} />

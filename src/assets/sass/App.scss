@@ -5,7 +5,9 @@
 
 
 body {
-    background-color: rgb(167, 205, 236);    
+    background-color: rgb(167, 205, 236);
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .nav {
@@ -42,15 +44,22 @@ body {
 
         img {
             max-width: 16vw;
+
+            @media screen and (max-width: 767px) {
+                max-width: 50vw;
+            }
         }
 
         .hamburger-icon {
-            font-size: 2rem;
             margin-right: 20px;
             cursor: pointer;
             position: absolute;
             right: 0;
             fill: #fff;
+
+            @media screen and (max-width: 767px) {
+                bottom: 16px;
+            }
         }
     }
 
@@ -117,11 +126,24 @@ body {
 
         button {
             margin: 0 1rem;
+
+            @media screen and (max-width: 767px) {
+                margin: 0.5rem 0.2rem;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
         }
     }
 
     .slider-container {
         width: 30vw;
+    }
+
+    .participant, .price {
+        padding: 0;
+        margin: 0;
     }
 }
 

@@ -32,7 +32,7 @@ function App() {
 
         <p>{ideas.activity}</p>
         <Button type="primary" onClick={() => newIdea()} className="generator_btn">Générer une nouvelle idée</Button>
-        
+
       </div>
 
       <Footer />

@@ -25,7 +25,7 @@ const NumberIdea = () => {
       <Navbar />
       <div className="generator">
         <h1>Vous souhaitez trouver une activité selon le nombre de participants ?</h1>
-        <p>Sélectionnez le nombre de participants pour générer une idée ! </p>
+        <p className='participant'>Sélectionnez le nombre de participants pour générer une idée ! </p>
 
         <div className="slider-container">
           <Slider min={1} max={8} onChange={setNumbers} value={numbers} />
@@ -35,7 +35,7 @@ const NumberIdea = () => {
 
         <>
           <h3>Activité: {numberIdeas.activity}</h3>
-          <p>Participants: {numberIdeas.participants} personnes</p>
+          <p className='participant'>Participants: {numberIdeas.participants} personnes</p>
         </>
 
       </div>
