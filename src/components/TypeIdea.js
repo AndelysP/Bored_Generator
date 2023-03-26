@@ -2,7 +2,7 @@ import React from 'react'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { Button } from 'antd'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const TypeIdea = () => {
 

@@ -120,6 +120,10 @@ body {
             border: 0.1px solid rgb(121, 121, 121);
         }
     }
+
+    .slider-container {
+        width: 30vw;
+    }
 }
 
 .footer {
@@ -136,4 +140,9 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+.icon-wrapper {
+    display: flex;
+    align-items: center;
 }

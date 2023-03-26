@@ -28,20 +28,6 @@ function App() {
   };
 
 
-
-  const numberParticipantIdea = async () => {
-    await fetch(`http://www.boredapi.com/api/activity?participants=${numbers}`)
-      .then(res => res.json())
-      .then(data => setNumbersIdeas(data))
-  }
-
-
-  const handleSubmitNumber = (e) => {
-    e.preventDefault();
-
-    numberParticipantIdea();
-  }
-
   const getPriceIdeas = async () => {
     await fetch(`http://www.boredapi.com/api/activity?price=${price}`)
       .then(res => res.json())
@@ -65,15 +51,6 @@ function App() {
 
         <p>{ideas.activity}</p>
         <Button type="primary" onClick={() => newIdea()} className="generator_btn">Générer une nouvelle idée</Button>
-
-        <form onSubmit={handleSubmitNumber}>
-          <input type="number" value={numbers} onChange={(e) => setNumbers(e.target.value)} />
-          <button type='Submit'>Nombre de personnes</button>
-        </form>
-
-        <ul>
-          <li>{numberIdeas.activity}</li>
-        </ul>
 
         <form onSubmit={handleSubmitPrice}>
           <input type="number" value={price} onChange={(e) => setPrice(e.target.value)} />
