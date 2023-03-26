@@ -96,11 +96,29 @@ body {
 
     p {
         padding: 1rem 5rem;
-        border-bottom: 0.1px solid rgb(20, 30, 49);
     }
 
     h1 {
         color: rgb(20, 30, 49);
+    }
+
+    .btn-list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+            margin: 0 1rem;
+        }
+    }
+
+    ul {
+        li {
+            list-style-type: none;
+            font-weight: bold;
+            padding: 1rem;
+            border: 0.1px solid rgb(121, 121, 121);
+        }
     }
 }
 

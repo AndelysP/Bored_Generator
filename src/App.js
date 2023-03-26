@@ -6,15 +6,7 @@ import Footer from './components/Footer';
 
 function App() {
 
-  const [ideas, setIdeas] = useState([]); // Idée aléatoire
-
-  // Idée selon le type d'activité 
-  const [type, setType] = useState("")
-  const [typeIdeas, setTypeIdeas] = useState([]);
-
-  // Idée selon le nombre de personnes
-  const [numbers, setNumbers] = useState(0);
-  const [numberIdeas, setNumbersIdeas] = useState([]);
+  const [ideas, setIdeas] = useState([]); // Idée aléatoire  
 
   // Idée selon le prix 
   const [price, setPrice] = useState(0);
@@ -35,17 +27,7 @@ function App() {
     getIdeas();
   };
 
-  const getTypeIdeas = async () => {
-    await fetch(`http://www.boredapi.com/api/activity?type=${type}`)
-      .then(res => res.json())
-      .then(data => setTypeIdeas(data))
-  }
 
-  const handleSubmitType = (e) => {
-    e.preventDefault();
-
-    getTypeIdeas();
-  }
 
   const numberParticipantIdea = async () => {
     await fetch(`http://www.boredapi.com/api/activity?participants=${numbers}`)
@@ -83,15 +65,6 @@ function App() {
 
         <p>{ideas.activity}</p>
         <Button type="primary" onClick={() => newIdea()} className="generator_btn">Générer une nouvelle idée</Button>
-
-        <form onSubmit={handleSubmitType}>
-          <input type="text" value={type} onChange={(e) => setType(e.target.value)} />
-          <button type='submit'> Rechercher</button>
-        </form>
-
-        <ul>
-          <li>{typeIdeas.activity}</li>
-        </ul>
 
         <form onSubmit={handleSubmitNumber}>
           <input type="number" value={numbers} onChange={(e) => setNumbers(e.target.value)} />
