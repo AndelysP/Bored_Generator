@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import './assets/sass/App.scss';
 import Navbar from './components/Navbar';
+import { Button } from 'antd';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -77,10 +79,10 @@ function App() {
       <Navbar />
 
       <div className="generator">
-        <h1>Générateur d'idées :</h1>
+        <h1>La fin de l'ennui commence ici !</h1>
 
         <p>{ideas.activity}</p>
-        <button onClick={() => newIdea()} className="generator_btn">Générer une nouvelle idée</button>
+        <Button type="primary" onClick={() => newIdea()} className="generator_btn">Générer une nouvelle idée</Button>
 
         <form onSubmit={handleSubmitType}>
           <input type="text" value={type} onChange={(e) => setType(e.target.value)} />
@@ -111,7 +113,7 @@ function App() {
         </ul>
       </div>
 
-
+      <Footer />
     </div>
   );
 }
